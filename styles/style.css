@@ -1,0 +1,171 @@
+:root {
+  --main-bg: #343a40;
+  --container-bg: #495057;
+  --sub-container: #21252960;
+  --main-theme: #12b886;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+
+  background-color: var(--main-bg);
+
+  height: 100vh;
+  width: 100%;
+
+  user-select: none;
+
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50%;
+  height: 70%;
+  background-color: var(--container-bg);
+  padding: 20px;
+
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  gap: 5%;
+}
+
+.code-container {
+  width: 80%;
+  height: 70%;
+
+  border-radius: 10px;
+  /* border: 2px solid var(--main-theme); */
+
+  background-color: #12b886;
+  /*  #12b88643 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-input {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  gap: 16%;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+.btn-create {
+  /* transform: translateY(-20%); */
+
+  background: none;
+  border: none;
+
+  color: var(--main-theme);
+
+  border: 1px solid var(--main-theme);
+
+  padding: 8px 18px;
+
+  font-size: 16px;
+  border-radius: 4px;
+
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+}
+
+.btn-create:hover {
+  transition: all 400ms;
+  background-color: #12b88622;
+  color: #38d9a9;
+}
+
+.link {
+  outline: none;
+  background: none;
+  border: none;
+
+  border-bottom: 2px solid var(--main-theme);
+
+  font-size: 16px;
+
+  padding: 6px 1px;
+
+  color: var(--main-theme);
+
+  width: 60%;
+}
+
+::placeholder {
+  color: var(--main-theme);
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  color: var(--main-theme);
+  opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+  color: var(--main-theme);
+  opacity: 0.5;
+}
+
+.qr-code {
+  width: 36%;
+  border-radius: 10px;
+}
+
+.navigation {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+}
+
+.btn--info:link,
+.btn--info:visited,
+.btn--info:hover,
+.btn--info:active {
+  text-decoration: none;
+}
+
+.icon--info {
+  height: 48px;
+  stroke: var(--main-theme);
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 90%;
+  }
+
+  .link {
+    width: 80%;
+  }
+
+  .code-container {
+    width: 96%;
+  }
+}

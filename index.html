@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRCode</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="JS/jQuery.js" defer></script>
+    <script src="JS/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        class="link"
+        data-link
+        placeholder="Enter Link..."
+        required
+      />
+      <button class="btn-create" data-create>Create QR</button>
+
+      <div class="code-container" data-codeContainer>
+        <img src="" class="qr-code" data-qr />
+      </div>
+    </div>
+
+    <div class="navigation">
+      <a href="profile.html" class="btn--info">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon--info"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
